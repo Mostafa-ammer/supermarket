@@ -1,0 +1,151 @@
+
+
+@font-face{font-family:'logo'; src:url(../fonts/font/MeriendaOne-Regular.ttf);}
+@font-face{font-family:'pop'; src:url(../fonts/font/Poppins-Regular.ttf);}
+@font-face{font-family:'balo'; src:url(../fonts/font/BalooChettan.ttf);}
+@font-face{font-family:'jose'; src:url(../fonts/font/JosefinSans.ttf);}
+@font-face{font-family:'tenor'; src:url(../fonts/font/TenorSans-Regular.ttf);}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-26deg,#03a9f4 0%,#3a78b7 50%,#262626 50%,#607d8b 100%);
+    filter: hue-rotate(120deg);
+    animation: animate 10s linear infinite;
+}
+
+
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.box img{
+    width: 25px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    transform: scale(0.7);
+    filter: invert(1);
+}
+
+.box{
+    position: relative;
+    padding: 50px;
+        height: 514px;
+    width: 418px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 6px;
+}
+
+
+.box::after{
+    content: '';
+    position: absolute;
+    top:5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 6px;
+    pointer-events: none;
+    background:  linear-gradient(to bottom,rgba(255,255,255,0.3) 0%
+        
+        ,rgba(255,255,255,0.1)15%,transparent 50%,transparent 85%,rgba(255,255,255,0.3) 100%)
+}
+
+
+.box .form{
+    position: relative;
+    width: 100%;
+    
+    
+}
+
+.box .form h2{
+    
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-family: 'balo';
+}
+.box .form .inputbx{
+    position: relative;
+     width: 100%;
+    margin-bottom: 20px;
+    
+    
+}
+
+.box .form .inputbx input{
+    
+ width: 100%;
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: transparent;
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
+    padding-left: 40px;
+    font-family: 'jose';
+}
+
+.remember{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: 'jose';
+}
+
+.box .form .inputbx input[type='submit']{
+    background-color: #fff;
+    color: #111;
+    max-width: 100px;
+    padding: 8px 10px;
+    box-shadow: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+.box .form .inputbx input::placeholder{
+    color: #fff;
+}
+
+.box .form p{
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 5px;
+        font-family: 'balo';
+}
+.box .form a{
+    color: #fff;
+    
+}
+.box .form a:hover{
+    color: #3cff00;
+}
